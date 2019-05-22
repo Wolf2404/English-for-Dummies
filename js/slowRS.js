@@ -14,7 +14,7 @@ function checkAnswer(){
     var userInput = document.getElementById('answer').value;
     var correcta = document.getElementById("correctaudio");
     var ans = userInput.toLowerCase();
-    if(ans == "a car"){
+    if(ans == "A car"){
         document.getElementById("answer").style.Color = "green";
         correcta.play(); 
         alert("Correct answer");
@@ -40,7 +40,7 @@ function checkAnswer1(){
     var userInput1 = document.getElementById('answer1').value;
     var correcta1 = document.getElementById("correctaudio");
     var ans1 = userInput1.toLowerCase();
-    if(userInput1=="an apple"){
+    if(userInput1=="An apple"){
         correcta1.play();
         alert("Correct answer");
         window.location = "#pagethree";
@@ -65,7 +65,7 @@ function checkAnswer2(){
     var userInput2 = document.getElementById('answer2').value;
     var correcta2 = document.getElementById("correctaudio");
     var ans2 = userInput2.toLowerCase();
-    if(userInput2=="this pen is red"){
+    if(userInput2=="This pen is red"){
         correcta2.play();
         alert("Correct answer");
         window.location = "#pagefour";
@@ -90,7 +90,7 @@ function checkAnswer3(){
     var userInput3 = document.getElementById('answer3').value;
     var correcta3 = document.getElementById("correctaudio");
     var ans3 = userInput3.toLowerCase();
-    if(userInput3=="he is tired"){
+    if(userInput3=="He is tired"){
         correcta3.play();
         alert("Correct answer");
         window.location = "#pagefive";
@@ -115,7 +115,7 @@ function checkAnswer4(){
     var userInput4 = document.getElementById('answer4').value;
     var correcta4 = document.getElementById("correctaudio");
     var ans4 = userInput4.toLowerCase();
-    if(userInput4=="they are happy"){
+    if(userInput4=="They are happy"){
         correcta4.play();
         
         if(check1 != 0){
