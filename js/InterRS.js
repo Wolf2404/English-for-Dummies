@@ -8,7 +8,7 @@ function checkAnswer(){
     var userInput = document.getElementById('answer').value;
     var correcta = document.getElementById("correctaudio");
     var ans = userInput.toLowerCase();
-    if(ans == "i did not see her"){
+    if(ans == "I did not see her"){
         document.getElementById("answer").style.Color = "green";
         correcta.play(); 
         alert("Correct answer");
@@ -32,7 +32,7 @@ function checkAnswer1(){
     var userInput1 = document.getElementById('answer1').value;
     var correcta1 = document.getElementById("correctaudio");
     var ans1 = userInput1.toLowerCase();
-    if(userInput1=="i am feeling sick"){
+    if(userInput1=="I am feeling sick"){
         correcta1.play();
         alert("Correct answer");
         window.location = "#pagethree"
@@ -55,7 +55,7 @@ function checkAnswer2(){
     var userInput2 = document.getElementById('answer2').value;
     var correcta2 = document.getElementById("correctaudio");
     var ans2 = userInput2.toLowerCase();
-    if(userInput2=="they had a good time"){
+    if(userInput2=="They had a good time"){
         correcta2.play();
         alert("Correct answer");
         window.location = "#pagefour"
@@ -79,7 +79,7 @@ function checkAnswer3(){
     var userInput3 = document.getElementById('answer3').value;
     var correcta3 = document.getElementById("correctaudio");
     var ans3 = userInput3.toLowerCase();
-    if(userInput3=="we have hurt one another"){
+    if(userInput3=="We have hurt one another"){
         correcta3.play();
         alert("Correct answer");
         window.location = "#pagefive"
@@ -102,7 +102,7 @@ function checkAnswer4(){
     var userInput4 = document.getElementById('answer4').value;
     var correcta4 = document.getElementById("correctaudio");
     var ans4 = userInput4.toLowerCase();
-    if(userInput4=="he does go home sometimes"){
+    if(userInput4=="He does go home sometimes"){
         correcta4.play();
         alert("Correct answer");
         window.location.replace("intermcq.html");
