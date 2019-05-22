@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title> Write </title>
+ 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "../js/jquery.mobile-1.4.5.css">
+        <script src = "../js/jquery.js"></script>
+        <script src = "../js/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src = "../js/Write.js"></script>
+    
+</head>
+
+<body>
+
+    <audio id="correctaudio">
+        <source src="../audio/correct.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>   
+
+
+
+   	<!-- Page One-->
+  	<div data-role="page" id="pageone" data-theme="a">
+    	<div data-role="header"><h1>Write</h1></div>
+    
+    	<div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+    	</div>
+
+    	<div data-role="main" class="ui-content">
+            <p id="wrong"></p>
+        <!--code for the audio-->    
+        	<audio id="myAudio">
+        		<source src="../audio/thankYouVeryMuch.mp3" type="audio/mpeg">
+        	</audio>   
+        	
+        	<button id=btnaudio data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio()" type="button">Play Audio</button> 
+        	<input type="text" name="answer" id="answer" style="width:100% !important;"/>
+        	<button  id="btnCheck" onclick="checkAnswer()" type="button">Check Answer</button>
+
+    	</div>
+
+    </div>
+  	<!--/End of Page One-->
+
+   	<!--Page two-->
+    <div data-role="page" id="pagetwo" data-theme="a">
+        
+        <div data-role="header"><h1>Write</h1></div>
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+
+        <div data-role="main" class="ui-content">
+        <!--code for the audio-->    
+            <audio id="myAudio1">
+                <source src="../audio/atTheRestaurant.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio1 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio1()" type="button">Play Audio</button> 
+            <input type="text" name="answer1" id="answer1" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer1()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page two-->
+
+   	<!--Page three-->
+    <div data-role="page" id="pagethree" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio2">
+                <source src="../audio/whichCarDidYouBuy.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio2 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio2()" type="button">Play Audio</button> 
+            <input type="text" name="answer2" id="answer2" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer2()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page three-->
+
+
+<!--Page four-->
+    <div data-role="page" id="pagefour" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio3">
+                <source src="../audio/IFindThatGorgeous.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio3 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio3()" type="button">Play Audio</button> 
+            <input type="text" name="answer3" id="answer3" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer3()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page four-->
+
+
+   	<!--Page five-->
+    <div data-role="page" id="pagefive" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio4">
+                <source src="../audio/shallWeMeetTomorrow.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio4 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio4()" type="button">Play Audio</button> 
+            <input type="text" name="answer4" id="answer4" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer4()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page five->
+
+
+   		<!--Page six-->
+    <div data-role="page" id="pagesix" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio5">
+                <source src="../audio/takeATaxiNextTime.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio5 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio5()" type="button">Play Audio</button> 
+            <input type="text" name="answer5" id="answer5" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer5()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page six-->
+
+
+   	<!--Page seven-->
+    <div data-role="page" id="pageseven" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio6">
+                <source src="../audio/theseAreSixMonths.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio6 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio6()" type="button">Play Audio</button> 
+            <input type="text" name="answer6" id="answer6" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer6()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page seven-->
+
+
+   	<!--Page eight-->
+    <div data-role="page" id="pageeight" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio7">
+                <source src="../audio/todayIsSaturday.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio7 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio7()" type="button">Play Audio</button> 
+            <input type="text" name="answer7" id="answer7" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer7()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page eight-->
+
+
+   	<!--Page nine-->
+    <div data-role="page" id="pagenine" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio8">
+                <source src="../audio/whereDoYouComeFrom.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio8 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio8()" type="button">Play Audio</button> 
+            <input type="text" name="answer8" id="answer8" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer8()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page nine-->
+   	
+
+
+   	<!--Page ten-->
+    <div data-role="page" id="pageten" data-theme="a">
+        <div data-role="header"><h1>Write</h1></div>
+        
+        <div data-role="navbar">
+        	<h4>Listen to the audio and type in what you hear</h4>
+        </div>
+        <div data-role="main" class="ui-content">
+        <!--code for the audio--> 
+            <audio id="myAudio9">
+                <source src="../audio/iWantToRead.mp3" type="audio/mpeg">
+            </audio>   
+
+            <button id=btnaudio9 data-icon="ui-btn ui-icon-audio ui-btn-icon-bottom" onclick="playAudio9()" type="button">Play Audio</button> 
+            <input type="text" name="answer9" id="answer9" style="width:100% !important;"/>
+            <button id="btnCheck" onclick="checkAnswer9()" type="button">Check Answer</button>
+        </div>
+
+    </div>
+   	<!--End of Page ten-->
+
+
+	</body>
+</html>
+
+
