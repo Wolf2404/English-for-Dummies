@@ -21,6 +21,8 @@
 			<button id="button2" > Verbs</button>
 			<button id="button3" > Write </button>
 			<button id="button4" > Assessment </button>
+			<button id="button5" > Sentence Builder </button>
+			<button id="button6" > Picture Identifier </button>
 		</div>
 	</div>
 	
@@ -69,6 +71,12 @@
 		
 		$("#button4").on("click", function(){
 			$.mobile.changePage("#assessement", {reverse:false, transition:"slide"});
+		});
+		$("#button5").on("click", function(){
+			window.location.replace("../sentence/index.html");
+		});
+		$("#button6").on("click", function(){
+			window.location.replace("../imageclass/index.html");
 		});
 		
 		$("#back").on("click", function(){
